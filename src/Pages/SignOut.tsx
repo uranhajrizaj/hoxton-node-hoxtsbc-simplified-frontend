@@ -1,5 +1,5 @@
 import { useState } from "react"
-import * as API from './api'
+import * as API from '../api'
 
 
 export function SignOut({ signIn }: any) {
