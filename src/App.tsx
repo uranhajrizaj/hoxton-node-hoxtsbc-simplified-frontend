@@ -7,6 +7,7 @@ import { Transactions } from './Pages/Transactions'
 function App() {
   const [currentuser, setCurrentuser] = useState(null)
 
+
   function signIn(data: any) {
     setCurrentuser(data.user)
     localStorage.token = data.token
@@ -39,7 +40,7 @@ function App() {
         : <>
           <h1>Welcome</h1>
           <SignOut signIn={signIn} />
-          <Signin signIn={signIn} />
+          <Signin signIn={signIn}  />
         </>
       }
     </div>
